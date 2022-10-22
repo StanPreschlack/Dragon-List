@@ -124,7 +124,7 @@ app.get('/stats', (req, res) => {
     res.render('stats', {numberOfDragonsAdded:dragonsAdded})
 })
 
-
-app.listen(9999, () => {
-    console.log("Now listening on port: 9999")
+let PORT = port = process.env.PORT || 8080
+app.listen(PORT, () => {
+    console.log("Now listening on port: ", PORT)
 })

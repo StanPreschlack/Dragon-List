@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Dragons</title>
+        <link rel="shortcut icon" href="../views/favicon.ico">
+        <link rel="stylesheet" href="/public/css/styles.css"></link>
+        <script type="text/javascript" src="../mode.js"></script>
+    </head>
+    <body id="body">
+        <img src="/public/img/header.jpg" id="header">
+        {{#if dragon}}
+        <h1>Filter Dragons By House</h1>
+        <form>
+            <input type="text" id="house_filter" placeholder="enter a house name" name="house_name">
+            <input type="submit" id="house_filter_submit">
+        </form>
+        <table id="dragon_table" cellspacing="0">
+         <tr>
+            <th>Dragon Name</th>
+            <th>Rider</th>
+            <th>Identification</th>
+            <th>House</th>
+        </tr>
+
+        {{#each dragon}}
+        <tr>
+            <td>{{dragonName}}</td>
+            <td>{{rider}}</td>
+            <td>{{identification}}</td>
+            <td>{{house}}</td>
+        </tr>
+        {{/each}}
+        </table>
+           <footer>
+            <a href="/">dragons_home</a>
+            <a href="dragon">add_dragon</a>
+            <a href="stats">stats</a>
+        </footer>
+        {{else}}
+        {{{body}}}
+        <footer>
+            <a href="/">dragons_home</a>
+            <a href="dragon">add_dragon</a>
+            <a href="stats">stats</a>
+        </footer>
+        {{/if}}
+        {{!-- taken from https://www.w3schools.com/howto/howto_css_switch.asp --}}
+        <label class="switch" id="modeToggle" onclick="toggle">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <script>
+            document.getElementById("modeToggle").addEventListener("click", () => {
+                console.log("Hello")
+            })
+        </script>
+    </body>
+</html>

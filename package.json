@@ -1,0 +1,37 @@
+{
+  "name": "homework04-stanpreschlack",
+  "version": "1.0.0",
+  "description": "Homework04",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-fall-2022/homework04-StanPreschlack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/homework04-StanPreschlack/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/homework04-StanPreschlack#readme",
+  "devDependencies": {
+    "package": "^1.0.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "exphbs": "^1.2.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.6.7",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}

@@ -1,0 +1,218 @@
+/* styles.css */
+@font-face {
+    font-family: got;
+    src: url(../fonts/Game_of_Thrones.ttf);
+}
+* {
+    font-family: got;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    position: absolute;
+    width: 100%;
+    max-width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0 0 10px 10px;
+    top: 0;
+}
+h1 {
+    position: absolute;
+    top: 22vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: large;
+    border-bottom: 3px solid black;
+}
+#house_filter {
+    position: absolute;
+    top: 250px;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(100, 100, 212);
+    height: 50px;
+    text-align: center;
+    caret-color: rgb(100, 100, 212);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#house_filter_submit {
+    position: relative;
+    width: 150px;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(100, 100, 212);
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#house_filter_submit:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+    cursor: grab;
+}
+#dragon_table {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    max-height: 350px;
+    overflow: scroll;
+    padding:50px 30px 30px 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#dragon_table td {
+    padding: 10px;
+    opacity: 0.8;
+}
+table {
+    border-radius: 10px;
+    padding: 100px;
+}
+table, td {
+    border: 2px solid rgb(100, 100, 212);
+}
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 100%;
+}
+footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(100, 100, 212);
+}
+#add_dragon_form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#add_dragon_form input[type=text] {
+    width: 70vw;
+    max-width: 600px;
+    border: 2px solid rgb(100, 100, 212);
+    height: 50px;
+    text-align: center;
+    caret-color: rgb(100, 100, 212);
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#add_dragon_form input[type=submit] {
+    position: relative;
+    border: 2px solid rgb(100, 100, 212);
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(148, 99, 25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition-duration: 0.5s;
+}
+#add_dragon_form input[type=submit]:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    
+    cursor: grab;
+}
+#stats_h1 {
+    width: 100vw;
+    text-align: center;
+    max-width: 700px;
+}
+#dragons_added {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: none;
+    font-size: 100pt;
+}
+/* taken from https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgb(100, 100, 212);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(255, 166, 33);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+@media(min-width: 904px) {
+    h1 {
+        top: 200px;
+    }
+    #house_filter {
+        width: 500px;
+    }
+    #header {
+        width: 900px;
+    }
+}

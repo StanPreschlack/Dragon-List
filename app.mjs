@@ -25,7 +25,6 @@ connect()
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 const app = express()
-const PORT = 9000
 
 var sessionOptions = {
 	secret: 'secrets of targaryen',

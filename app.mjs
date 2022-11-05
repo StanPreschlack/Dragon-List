@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 import * as url from 'url';
 import DragonModel from "./public/models/dragon.mjs"
 
-const URI = "mongodb+srv://stan-stan:dragons_have_invaded_dave_and_busterS@cluster0.zgrjyar.mongodb.net/?retryWrites=true&w=majority"
+const URI = "mongodb+srv://stan-stan:[PASSWORD]@cluster0.zgrjyar.mongodb.net/?retryWrites=true&w=majority"
 
 //database connection
 
